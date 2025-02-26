@@ -27,7 +27,7 @@ The data contains the following column fields:
 - **`LastTransaction:`** Timestamp of customer's last recorded transaction.
 - **`DOB:`** Customer's Date of Birth
 
-### `Task2:` Investigate Data Quality Issues
+### `Task2:` Investigating Data Quality Issues
 
 Checking the data we found missing customer names, emails and phone numbers: 
 
