@@ -35,7 +35,7 @@ Checking the data we found missing customer names, emails and phone numbers:
 
 We also found duplicate email address associated with the same person:
 
-![image](https://github.com/user-attachments/assets/3c4f9bac-94de-4eaf-b9d2-7097961bd10f)
+![image](https://github.com/user-attachments/assets/cf1553d0-ab2c-4878-8bb8-32bffb3034e8)
 
 Name, Phone and DOB fields need formatting:
 
