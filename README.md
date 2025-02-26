@@ -2,7 +2,7 @@
 This project involed several techniques to clean messy data in `Snowflake`.
 
 ## Project Scenario
-For a marketing campaign, I have been assigned to find the list of inactive customers (didn't make any transactions in the last 90 days).
+For a marketing campaign, We need to find a list of inactive customers (didn't make any transactions in the last 90 days).
 Available customers data has several challenges like duplicated customers, missing emails, merged columns, non-standarized phone numbers and wrong data types.
 In addition, additional fields need to be calculated.
 
