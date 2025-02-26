@@ -10,7 +10,7 @@ The task is to reformat and clean the data using SQL functions in `Snowflake` be
 
 ### `Task1:` Data Loading
 
-There several ways to load data into a `Snowflake` table, in this case we used SQL Insert Statements for this project.
+There are several ways to load data into a `Snowflake` table, in this case we used SQL Insert Statements for this project.
 
 ![image](https://github.com/user-attachments/assets/26e443b8-f857-454f-a903-a31ea2ea043e)
 
@@ -28,3 +28,16 @@ The data contains the following column fields:
 - **`DOB:`** Customer's Date of Birth
 
 ### `Task2:` Investigate Data Quality Issues
+
+Checking the data we found missing customer names, emails and phone numbers: 
+
+![image](https://github.com/user-attachments/assets/f2f30aee-1986-468c-b6ac-b5caf300f050)
+
+We also found duplicate email address associated with the same person:
+
+![image](https://github.com/user-attachments/assets/3c4f9bac-94de-4eaf-b9d2-7097961bd10f)
+
+Name, Phone and DOB fields need formatting:
+
+![image](https://github.com/user-attachments/assets/239ef225-f11a-4eae-a231-019f76d77cd8)
+
