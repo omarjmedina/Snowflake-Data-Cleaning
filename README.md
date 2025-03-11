@@ -27,7 +27,7 @@ The data contains the following column fields:
 - **`LastTransaction:`** Timestamp of customer's last recorded transaction.
 - **`DOB:`** Customer's Date of Birth
 
-### `Task2:` Investigating Data Quality Issues
+### `Task2:` Investigate Data Quality Issues
 
 Checking the data we found missing customer names, emails and phone numbers: 
 
@@ -41,7 +41,7 @@ Name, Phone and DOB fields need formatting:
 
 ![image](https://github.com/user-attachments/assets/239ef225-f11a-4eae-a231-019f76d77cd8)
 
-### `Task3:` Removing Unwanted Characters
+### `Task3:` Remove Unwanted Characters
 
 The `CONCAT()` function is used to help visually spaces:
 ![image](https://github.com/user-attachments/assets/9c44ecbd-42e1-4474-b421-6a513bfa91d7)
@@ -49,9 +49,13 @@ The `CONCAT()` function is used to help visually spaces:
 The `TRIM()` function is used to remove leading and trailing spaces and zeros.
 ![image](https://github.com/user-attachments/assets/cc839f85-6226-43dc-a262-9b7c3249bd3a)
 
-### `Task4:` Extracting First and Last Name from `NAME` Column
+### `Task4:` Extract First and Last Name from `NAME` Column
 
 The `SPLIT_PART()` function is used to split first and last names, including previously used `TRIM()` function:
 
 ![image](https://github.com/user-attachments/assets/64cbb1e6-85d6-4de6-8b6c-2fe5c9d01fbb)
+
+### `Task5:` Standarize 'PHONE' Column
+
+
 
