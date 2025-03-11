@@ -41,3 +41,12 @@ Name, Phone and DOB fields need formatting:
 
 ![image](https://github.com/user-attachments/assets/239ef225-f11a-4eae-a231-019f76d77cd8)
 
+### `Task3:` Removing Unwanted Characters
+
+The `CONCAT()` function is used to help visually spaces:
+![image](https://github.com/user-attachments/assets/9c44ecbd-42e1-4474-b421-6a513bfa91d7)
+
+The `TRIM()` function is used to remove leading and trailing spaces and zeros.
+![image](https://github.com/user-attachments/assets/cc839f85-6226-43dc-a262-9b7c3249bd3a)
+
+
