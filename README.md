@@ -52,10 +52,11 @@ The `TRIM()` function is used to remove leading and trailing spaces and zeros.
 ### `Task4:` Extract First and Last Name from `NAME` Column
 
 The `SPLIT_PART()` function is used to split first and last names, including previously used `TRIM()` function:
-
 ![image](https://github.com/user-attachments/assets/64cbb1e6-85d6-4de6-8b6c-2fe5c9d01fbb)
 
 ### `Task5:` Standarize 'PHONE' Column
 
+The `LTRIM()` function is used to remove leading zeros.
+![image](https://github.com/user-attachments/assets/8d3dfcee-875a-4b6d-898e-c3a6069965bc)
 
 
