@@ -2,7 +2,7 @@
 This project involed several techniques to clean messy data in `Snowflake`.
 
 ## Project Scenario
-For a marketing campaign, We need to find a list of inactive customers (didn't make any transactions in the last 90 days).
+For a marketing campaign, we need to find a list of inactive customers (didn't make any transactions in the last 90 days).
 Available customers data has several challenges like duplicated customers, missing emails, merged columns, non-standarized phone numbers and wrong data types.
 In addition, additional fields need to be calculated.
 
@@ -49,4 +49,9 @@ The `CONCAT()` function is used to help visually spaces:
 The `TRIM()` function is used to remove leading and trailing spaces and zeros.
 ![image](https://github.com/user-attachments/assets/cc839f85-6226-43dc-a262-9b7c3249bd3a)
 
+### `Task4:` Extracting First and Last Name from `NAME` Column
+
+The `SPLIT_PART()` function is used to split first and last names, including previously used `TRIM()` function:
+
+![image](https://github.com/user-attachments/assets/64cbb1e6-85d6-4de6-8b6c-2fe5c9d01fbb)
 
