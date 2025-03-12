@@ -59,4 +59,11 @@ The `SPLIT_PART()` function is used to split first and last names, including pre
 The `LTRIM()` function is used to remove leading zeros.
 ![image](https://github.com/user-attachments/assets/8d3dfcee-875a-4b6d-898e-c3a6069965bc)
 
+### `Task6:` Extract DATE from a Text Column
+
+Our columns of interest are `DOB` (Date of Birth) and `LASTTRANSACTION`. The last one is used to filter 90days old customer transactions (Inactive Customers):
+
+![image](https://github.com/user-attachments/assets/42974e24-9933-4552-8bbb-08a1ad819709)
+
+We then apply `TO_DATE()` function to the columns to an standarized date format
 
