@@ -89,6 +89,17 @@ Customer's Age is calculated as a difference between `CURRENT_DATE` and `DOB`:
 
 ![image](https://github.com/user-attachments/assets/d18517a0-af5c-4268-9dca-c266d3180c75)
 
+### `Task9:` Handling missing values
+
+Below is the final query with all applied SQL functions:
+
+![image](https://github.com/user-attachments/assets/e995686c-72ab-453d-ae75-0d9cf01c30e9)
+
+This is the final results of inactive customers:
+
+![image](https://github.com/user-attachments/assets/bcb3dbf8-166b-458b-8b06-7ce553a565d8)
+
+
 
 
 
