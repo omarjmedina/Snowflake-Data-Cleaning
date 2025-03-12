@@ -43,7 +43,7 @@ We also found duplicate email address associated with the same person:
 
 ### `Task3:` Remove Unwanted Characters
 
-The `CONCAT()` function is used to help visually spaces:
+The `CONCAT()` function is used to help spot spaces:
 ![image](https://github.com/user-attachments/assets/9c44ecbd-42e1-4474-b421-6a513bfa91d7)
 
 The `TRIM()` function is used to remove leading and trailing spaces and zeros.
