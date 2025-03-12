@@ -1,5 +1,5 @@
 # Snowflake-Data-Cleaning
-This project involed several techniques to clean messy data in `Snowflake`.
+This project involved several techniques to clean messy data in `Snowflake`.
 
 ## Project Scenario
 For a marketing campaign, we need to find a list of inactive customers (didn't make any transactions in the last 90 days).
