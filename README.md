@@ -99,6 +99,14 @@ This is the final results of inactive customers:
 
 ![image](https://github.com/user-attachments/assets/8785a672-d622-4760-b287-97145785d3e7)
 
+After analizing the data we see that email is the best contact point of customers, so we will keep customers with filled email.
+
+We will filled missing company values with 'N/A' using `IFF()` function
+
+The final query below:
+
+![image](https://github.com/user-attachments/assets/cc60fe4b-9c82-4866-8e9f-b3e2693485d3)
+
 
 
 
