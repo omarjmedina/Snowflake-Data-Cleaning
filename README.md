@@ -56,7 +56,7 @@ The `SPLIT_PART()` function is used to split first and last names, including pre
 
 ### `Task5:` Standarize `PHONE` Column
 
-The `LTRIM()` function is used to remove leading zeros.
+The `LTRIM()` function is used to remove leading zeros and plus signs.
 ![image](https://github.com/user-attachments/assets/8d3dfcee-875a-4b6d-898e-c3a6069965bc)
 
 ### `Task6:` Extract DATE from a Text Column
