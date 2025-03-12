@@ -107,6 +107,9 @@ The final query below:
 
 ![image](https://github.com/user-attachments/assets/cc60fe4b-9c82-4866-8e9f-b3e2693485d3)
 
+The final results after handling missing values:
+
+![image](https://github.com/user-attachments/assets/2bd25fc6-9ea9-4ab4-a9c2-b29fbc124f88)
 
 
 
