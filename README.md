@@ -69,5 +69,29 @@ We then apply `TO_DATE()` function to convert the text columns to an standarized
 
 ![image](https://github.com/user-attachments/assets/2b297418-7832-4897-9de9-da1d528844ab)
 
+### `Task7:` Add new column `DAYS_SINCE_LAST_TRANSACTION`
+
+Our end goal for this project is to find the list of inactive customers, those who didn't make any transactions in the last 90 days.
+
+We add a new calculated column `DAYS_SINCE_LAST_TRANSACTION` that shows the number of days of customers' last transaction.
+
+It is calculated as a difference between `CURRENT_DATE` and `LASTTRANSACTION`:
+
+![image](https://github.com/user-attachments/assets/8a3e1328-a79c-46eb-a8ec-32fdf5356a87)
+
+In order to find inactive customers we add a `WHERE` clause to filter (DAYS_SINCE_LAST_TRANSACTION > 90):
+
+![image](https://github.com/user-attachments/assets/74a690ed-fac3-48b9-97e4-097da68c4161)
+
+### `Task8:` Calculate Customers' Age
+
+Customer's Age is calculated as a difference between `CURRENT_DATE` and `DOB`:
+
+
+
+
+
+
+
 
  
