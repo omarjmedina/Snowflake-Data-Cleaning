@@ -37,7 +37,7 @@ We also found duplicate email address associated with the same person:
 
 ![image](https://github.com/user-attachments/assets/cf1553d0-ab2c-4878-8bb8-32bffb3034e8)
 
-Name, Phone, DOB and LASTTRANSACTION fields need formatting:
+**Name**, **Phone**, **DOB** and **LASTTRANSACTION** fields need formatting:
 
 ![image](https://github.com/user-attachments/assets/239ef225-f11a-4eae-a231-019f76d77cd8)
 
