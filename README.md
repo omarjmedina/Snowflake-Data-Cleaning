@@ -97,7 +97,8 @@ Below is the final query with all applied SQL functions:
 
 This is the final results of inactive customers:
 
-![image](https://github.com/user-attachments/assets/bcb3dbf8-166b-458b-8b06-7ce553a565d8)
+![image](https://github.com/user-attachments/assets/8785a672-d622-4760-b287-97145785d3e7)
+
 
 
 
