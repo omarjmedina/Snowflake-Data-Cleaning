@@ -62,9 +62,11 @@ The `LTRIM()` function is used to remove leading zeros and plus signs.
 ### `Task6:` Extract DATE from a Text Column
 
 Our columns of interest are `DOB` (Date of Birth) and `LASTTRANSACTION`. The last one is used to filter 90days old customer transactions (Inactive Customers):
+
 ![image](https://github.com/user-attachments/assets/42974e24-9933-4552-8bbb-08a1ad819709)
 
 We then apply `TO_DATE()` function to convert the text columns to an standarized date format:
+
 ![image](https://github.com/user-attachments/assets/2b297418-7832-4897-9de9-da1d528844ab)
 
 
