@@ -87,6 +87,7 @@ In order to find inactive customers we add a `WHERE` clause to filter (DAYS_SINC
 
 Customer's Age is calculated as a difference between `CURRENT_DATE` and `DOB`:
 
+![image](https://github.com/user-attachments/assets/d18517a0-af5c-4268-9dca-c266d3180c75)
 
 
 
