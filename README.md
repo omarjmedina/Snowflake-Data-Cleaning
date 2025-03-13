@@ -167,6 +167,10 @@ The results of the **Inactive_Customers** View query:
 
 ![image](https://github.com/user-attachments/assets/88f251b1-754a-41e1-950d-d96f9feb9b08)
 
+Below is the exported .csv list of inactive customers:
+
+![image](https://github.com/user-attachments/assets/21f59350-f5da-42b1-b22f-f433a783aaf1)
+
 
 
 
