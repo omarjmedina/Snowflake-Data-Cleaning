@@ -131,6 +131,7 @@ To filter with rank = 1, `QUALIFY`clause must be used instead of `WHERE`.
 ### `Task11:` Create View and export Inactive Customers
 
 ```sql
+CREATE OR REPLACE VIEW Inactive_Customers AS (
 WITH LISTID AS (
     SELECT 
         ID,
@@ -140,7 +141,7 @@ WITH LISTID AS (
 )
 SELECT 
     ID, 
-	SPLIT_PART(TRIM(NAME,' 0'),', ', 1) AS FIRST_NAME, 
+    SPLIT_PART(TRIM(NAME,' 0'),', ', 1) AS FIRST_NAME, 
     SPLIT_PART(TRIM(NAME,' 0'),', ', 2) AS LAST_NAME, 
     EMAIL,
     TO_DATE(DOB,'MMMM DD, YYYY') AS DOB,
@@ -157,7 +158,7 @@ FROM
 WHERE
     DaysSinceLastTrans > 90 
     AND NOT (EMAIL IS NULL OR EMAIL = '')
-    AND ID IN (SELECT ID FROM LISTID)
+    AND ID IN (SELECT ID FROM LISTID))
 ```
 
 
