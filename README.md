@@ -89,7 +89,7 @@ Customer's Age is calculated as a difference between `CURRENT_DATE` and `DOB`:
 
 ![image](https://github.com/user-attachments/assets/d18517a0-af5c-4268-9dca-c266d3180c75)
 
-### `Task9:` Handling missing values
+### `Task9:` Handling Missing Values
 
 Below is the final query with all applied SQL functions:
 
@@ -110,6 +110,21 @@ The final query below:
 The final results after handling missing values:
 
 ![image](https://github.com/user-attachments/assets/2bd25fc6-9ea9-4ab4-a9c2-b29fbc124f88)
+
+### `Task10:` Eliminate Duplicates
+
+In order to eliminate duplicates, we first need to detect them and select an unique column, in our case we select `EMAIL` as our unique column. We use SQL query on the Raw Data to find all duplicated emails. We don't need to worry about **NULL** values, because we already dealed with them.
+
+![image](https://github.com/user-attachments/assets/a9030c78-917c-4f05-b2e7-0abf7da6451e)
+
+Once duplicated emails (rows) are detected, we filter it and keep the records with the latest transaction date.
+
+In this case we use `RANK()` function to assign a uniqe rank to each row, that rank is done based on email. For each duplicated email an unique rank is assigned
+where rank 1 refered to the latest transaction date.
+
+![image](https://github.com/user-attachments/assets/87c98b91-b5de-4116-b22c-e3486e921963)
+
+
 
 
 
