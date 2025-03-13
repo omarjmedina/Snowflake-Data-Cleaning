@@ -120,14 +120,45 @@ In order to eliminate duplicates, we first need to detect them and select an uni
 Once duplicated emails (rows) are detected, we filter it and keep the records with the latest transaction date.
 
 In this case we use `RANK()` function to assign a unique rank to each row, that rank is done based on email. For each duplicated email an unique rank is assigned
-where rank 1 refered to the latest transaction date.
+where rank 1 refers to the latest transaction date.
 
 ![image](https://github.com/user-attachments/assets/87c98b91-b5de-4116-b22c-e3486e921963)
 
-To filter with rank = 1 `QUALIFY`clause must be used instead of `WHERE`.
+To filter with rank = 1, `QUALIFY`clause must be used instead of `WHERE`.
 
 ![image](https://github.com/user-attachments/assets/e2c59168-6f16-4962-ace6-f9711ee9ba85)
 
+### `Task11:` Create View and export Inactive Customers
+
+```sql
+WITH LISTID AS (
+    SELECT 
+        ID,
+        RANK() OVER (PARTITION BY EMAIL ORDER BY TO_DATE(LASTTRANSACTION, 'AUTO') DESC) AS RANK
+        FROM CUSTOMERS
+        QUALIFY RANK = 1
+)
+SELECT 
+    ID, 
+	SPLIT_PART(TRIM(NAME,' 0'),', ', 1) AS FIRST_NAME, 
+    SPLIT_PART(TRIM(NAME,' 0'),', ', 2) AS LAST_NAME, 
+    EMAIL,
+    TO_DATE(DOB,'MMMM DD, YYYY') AS DOB,
+	TO_DATE(LastTransaction,'AUTO') AS LastTransaction,
+	DATEDIFF(days, TO_DATE(LastTransaction,'AUTO'), current_date()) AS DaysSinceLastTrans,
+	DATEDIFF(days, TO_DATE(DOB,'MMMM DD, YYYY'), current_date()) AS Age,
+    LTRIM(PHONE,'0+') AS Standarized_Phone,
+    ADDRESS, 
+    REGION, 
+    COUNTRY,
+    IFF(COMPANY IS NULL OR COMPANY = '', 'N/A', COMPANY) AS COMPANY
+FROM
+    CUSTOMERS
+WHERE
+    DaysSinceLastTrans > 90 
+    AND NOT (EMAIL IS NULL OR EMAIL = '')
+    AND ID IN (SELECT ID FROM LISTID)
+```
 
 
 
