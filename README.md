@@ -128,7 +128,9 @@ To filter with rank = 1, `QUALIFY`clause must be used instead of `WHERE`.
 
 ![image](https://github.com/user-attachments/assets/e2c59168-6f16-4962-ace6-f9711ee9ba85)
 
-### `Task11:` Create View and export Inactive Customers
+### `Task11:` Create View and Export Inactive Customers
+
+The final query that handles missing values and duplicates is below, and then created as a view:
 
 ```sql
 CREATE OR REPLACE VIEW Inactive_Customers AS (
@@ -160,6 +162,11 @@ WHERE
     AND NOT (EMAIL IS NULL OR EMAIL = '')
     AND ID IN (SELECT ID FROM LISTID))
 ```
+
+The results of the **Inactive_Customers** View query:
+
+![image](https://github.com/user-attachments/assets/88f251b1-754a-41e1-950d-d96f9feb9b08)
+
 
 
 
